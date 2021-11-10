@@ -1,23 +1,41 @@
-import logo from './logo.svg';
+import Login from "./components/Login"
+import SignUp from "./components/SignUp"
+
+import styled from "styled-components"
 import './App.css';
+
+const UOBContainer = styled.div`    
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 75%;
+  height: 50%;
+
+  border-radius: 15px;
+  border: 1px solid black;
+`
+// const SignUp = styled.div`
+//   display: flex;
+//   flex-flow: column;
+//   justify-content: center;
+//   align-items: center;
+
+//   width: 45%;
+//   height: 75%;
+
+//   border-radius: 15px;
+//   border: 1px solid black;
+// `
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <UOBContainer>
+        <Login/>
+        <SignUp/>
+      </UOBContainer>
     </div>
   );
 }
