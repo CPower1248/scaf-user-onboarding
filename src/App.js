@@ -1,3 +1,5 @@
+import { Link, Routes, Route } from "react-router-dom"
+
 import Login from "./components/Login"
 import SignUp from "./components/SignUp"
 
@@ -20,8 +22,13 @@ function App() {
   return (
     <div className="App">
       <UOBContainer>
-        <Login/>
-        <SignUp/>
+        <Link to="/login">Login</Link>
+        <Link to="/signup">Sign Up</Link>
+
+        <Routes>
+          <Route exact path={"/login"} component={Login} />
+          <Route exact path={"/signup"} component={SignUp} />
+        </Routes>
       </UOBContainer>
     </div>
   );
