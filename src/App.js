@@ -15,19 +15,6 @@ const UOBContainer = styled.div`
   border-radius: 15px;
   border: 1px solid black;
 `
-// const SignUp = styled.div`
-//   display: flex;
-//   flex-flow: column;
-//   justify-content: center;
-//   align-items: center;
-
-//   width: 45%;
-//   height: 75%;
-
-//   border-radius: 15px;
-//   border: 1px solid black;
-// `
-
 
 function App() {
   return (
