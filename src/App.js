@@ -6,6 +6,8 @@ import SignUp from "./components/SignUp"
 import styled from "styled-components"
 import './App.css';
 
+// FIX
+
 const UOBContainer = styled.div`    
   display: flex;
   justify-content: space-evenly;
